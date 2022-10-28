@@ -1,13 +1,15 @@
 # **SLEEP WELL**
 <br> **Authors:** Junhee Park(rusu0531@uw.edu), Ji min Sung(jsung22@uw.edu), William Yuen (wyuenb@uw.edu)
-<br> **Affiliation:** INFO-201: Technical Foundations of Informatics - The Information School - University of Washington**
-<br> **Date:** Autumn 2022
+
+**Affiliation:** INFO-201: Technical Foundations of Informatics - The Information School - University of Washington**
+
+**Date:** Autumn 2022
 
 ## **Abstract**
 > Our _main question_ is **How to have the highest performance for the day with a good quality of sleep.** This question is important because approximately 70 million Americans suffer from Insomnia every year.  To address the question, we will collect data on sleep and figure out what the main causes of sleep disorders are.
 
 ## **Key Words**
-> - Sleep Quality
+- Sleep Quality
 - Stress Level
 - Average Amount of Sleep
 - Stress Level
@@ -17,13 +19,13 @@
 
 ## **Research Questions**
 
-> - **What is causing people to have a lack of sleep?**
+- **What is causing people to have a lack of sleep?**
   - People should know the main causes of lack of sleep so they can control and rebalance their sleep cycle to make a better quality of life and sleep. This question is one of the main questions of our project. The quality of sleep is very important and it always affects our lives.
 
-> - **What is the average amount of sleep that lets people wake up feeling well rested?**
+- **What is the average amount of sleep that lets people wake up feeling well rested?**
   - It is important to know the average amount of sleep that lets people wake up feeling well-rested because this data will individually provide the recommended amount of sleep time for users, based on their wake-up time for the last week and the data of average amount of sleep that lets people wake up feel well-rested ,in order to wake up feeling well-rested.
 
-> - **How does the amount of sleep affect stress levels?**
+- **How does the amount of sleep affect stress levels?**
   - Usually people have a difficult time sleeping when they have a stressful day. At high levels of stress, falling asleep takes longer and sleep is fragmented. [Dr. Annise Willson](https://www.bcm.edu/news/how-stress-can-affect-your-sleep ) explained, _"sleep loss triggers our bodies’ stress response system, resulting in an elevation of the stress hormone cortisol."_
 
 ## **The Dataset**
@@ -49,6 +51,6 @@
 ## **References**
 
 > - Diotte, D. (2022, April 25). _Sleep data._ Kaggle. Retrieved October 28, 2022, from https://www.kaggle.com/datasets/danagerous/sleep-data?select=sleepdata_2.csv
-- _How stress can affect your sleep._ Baylor College of Medicine. (n.d.). Retrieved October 28, 2022, from https://www.bcm.edu/news/how-stress-can-affect-your-sleep
-- Rachakonda, L. (2022, February 15). _Human stress detection in and through sleep._ Kaggle. Retrieved October 28, 2022, from https://www.kaggle.com/datasets/laavanya/human-stress-detection-in-and-through-sleep?select=SaYoPillow.csv
-- Diotte, D. (2022, April 25). _Sleep data._ Kaggle. Retrieved October 28, 2022, from https://www.kaggle.com/datasets/danagerous/sleep-data?select=sleepdata.csv
+> - _How stress can affect your sleep._ Baylor College of Medicine. (n.d.). Retrieved October 28, 2022, from https://www.bcm.edu/news/how-stress-can-affect-your-sleep
+> - Rachakonda, L. (2022, February 15). _Human stress detection in and through sleep._ Kaggle. Retrieved October 28, 2022, from https://www.kaggle.com/datasets/laavanya/human-stress-detection-in-and-through-sleep?select=SaYoPillow.csv
+> - Diotte, D. (2022, April 25). _Sleep data._ Kaggle. Retrieved October 28, 2022, from https://www.kaggle.com/datasets/danagerous/sleep-data?select=sleepdata.csv
