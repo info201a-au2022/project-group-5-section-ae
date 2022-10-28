@@ -1,7 +1,7 @@
 # **SLEEP WELL**
 <br> **Authors:** Junhee Park(rusu0531@uw.edu), Ji min Sung(jsung22@uw.edu), William Yuen (wyuenb@uw.edu)
 
-**Affiliation:** INFO-201: Technical Foundations of Informatics - The Information School - University of Washington**
+**Affiliation:** INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
 
 **Date:** Autumn 2022
 
@@ -34,11 +34,11 @@
 
 ## **Expected Implications**
 
-> **Technologists:** They can develop and release the application or website to help people’s good sleep cycle. Through the application or website, they suggest the amount of sleep time to users so users can have good quality of sleep.
+**Technologists:** They can develop and release the application or website to help people’s good sleep cycle. Through the application or website, they suggest the amount of sleep time to users so users can have good quality of sleep.
 
-> **Designers:** They can design applications or websites with a user-centered design by identifying direct and indirect stakeholders, researching, interviewing, and surveying people to make the app or websites more user-friendly.
+**Designers:** They can design applications or websites with a user-centered design by identifying direct and indirect stakeholders, researching, interviewing, and surveying people to make the app or websites more user-friendly.
 
-> **Policymakers:** It can be company or university policymakers. Basically, the main idea is the same which is putting the limitation of work time. So, people are not experiencing the overwhelming and guaranteed sleep time.
+**Policymakers:** It can be company or university policymakers. Basically, the main idea is the same which is putting the limitation of work time. So, people are not experiencing the overwhelming and guaranteed sleep time.
 
 ## **Limitations**
 
@@ -50,7 +50,7 @@
 
 ## **References**
 
-> - Diotte, D. (2022, April 25). _Sleep data._ Kaggle. Retrieved October 28, 2022, from https://www.kaggle.com/datasets/danagerous/sleep-data?select=sleepdata_2.csv
-> - _How stress can affect your sleep._ Baylor College of Medicine. (n.d.). Retrieved October 28, 2022, from https://www.bcm.edu/news/how-stress-can-affect-your-sleep
-> - Rachakonda, L. (2022, February 15). _Human stress detection in and through sleep._ Kaggle. Retrieved October 28, 2022, from https://www.kaggle.com/datasets/laavanya/human-stress-detection-in-and-through-sleep?select=SaYoPillow.csv
-> - Diotte, D. (2022, April 25). _Sleep data._ Kaggle. Retrieved October 28, 2022, from https://www.kaggle.com/datasets/danagerous/sleep-data?select=sleepdata.csv
+- Diotte, D. (2022, April 25). _Sleep data._ Kaggle. Retrieved October 28, 2022, from https://www.kaggle.com/datasets/danagerous/sleep-data?select=sleepdata_2.csv
+- _How stress can affect your sleep._ Baylor College of Medicine. (n.d.). Retrieved October 28, 2022, from https://www.bcm.edu/news/how-stress-can-affect-your-sleep
+- Rachakonda, L. (2022, February 15). _Human stress detection in and through sleep._ Kaggle. Retrieved October 28, 2022, from https://www.kaggle.com/datasets/laavanya/human-stress-detection-in-and-through-sleep?select=SaYoPillow.csv
+- Diotte, D. (2022, April 25). _Sleep data._ Kaggle. Retrieved October 28, 2022, from https://www.kaggle.com/datasets/danagerous/sleep-data?select=sleepdata.csv
