@@ -59,7 +59,7 @@ SleepStudyData.csv | 104 | 6
 
 ## **Acknowledgements**
 
-> Thanks to our group members, The data provider, and TA
+:handshake: Thanks to our group members, The data provider, and TA
 
 ## **References**
 
