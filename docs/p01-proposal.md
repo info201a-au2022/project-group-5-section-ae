@@ -17,6 +17,9 @@
 ## **Introduction**
 > A lot of college students, workers, and high school seniors have been experiencing stressful days recently. One of the biggest causes that let people experience stressful days is they have a lack of sleep. There might be a lot of reasons why people do not sleep. It can be staying up to work on assignments for school, working late for their job, or preparing for college with anxiety. But one of the biggest reasons why people stay up late and have stressful days is that they do not know how to control their sleep schedule. The _Sleep Well_ projects will help users to have a good amount of sleep with an organized sleep schedule that is built based on sleep data collected from Google Data Search.
 
+## **Problem Domain**
+> work on later
+
 ## **Research Questions**
 
 - **What is causing people to have a lack of sleep?**
