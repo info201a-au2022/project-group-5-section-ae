@@ -30,7 +30,17 @@
 
 ## **The Dataset**
 
->
+> The datasets are related to our problem domain and research questions because we are trying to figure out what is causing the lack of sleep and how the different amounts of sleep affects in two ways: stress levels and the feeling of well rested. Each entry (row) in the dataset provides us with the number of hours that person slept, as well as their stress levels from a scale of 1-4, any sleep notes (for example if they had a stressful day, if they drank coffee or tea that day, or if they worked out and exercised that day), and sleep quality as a percentage. Those were some of the useful columns, and that will be able to help us figure out the causes for lack of sleep and how that lack of sleep affects us.
+
+| Name of data file | Number of observation(rows) | Number of variables(columns) |
+|---------------| -------------- | --------------
+sleepdata.csv | 887 | 8
+sleepdata_2.csv | 921 | 21
+SleepStudyData.csv | 104 | 6
+
+### **Provenance of Dataset**
+> Dana Diotte used the Sleep Cycle iOS app from Northcube to collect the data. Her first dataset (sleepdata.csv) was collected from 2014-2018. Her second dataset (sleepdata_2.csv) was uploaded in April 2022 and it was a continuation of her first dataset from 2018. She did not have any specific purpose for collecting the data other than that she wanted to see how her collection of data looked versus how others’ collections of data looked like. There is no insight to how the collection of this data was funded, but there was a research project that used that dataset. This project is titled “From 887 days of sleep data to personalized suggestion” and is by Xiao Yang, a PhD and senior Data Scientist and Research Lead at Mindstrong. We obtained these datasets by going to www.kaggle.com/datasets and searching “sleep data”. Xiao Yang, and any readers viewing this project will benefit from the dataset Dana Diotte’s dataset. This data is held secure by kaggle, and it is credible and trustworthy because all the data is collected from data on the source of this data, the Sleep Cycle iOS app, and all the entries are specific entries from users.
+
 
 ## **Expected Implications**
 
