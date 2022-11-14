@@ -36,3 +36,16 @@ summary_info_3$stress_level_max_value <- SaYodata %>%
   filter(sl == max(sl, na.rm = T)) %>%
   select(sl)
 
+#Fourth data summary
+summary_info_4 <- list()
+summary_info_4$num_observations <- nrow(sleepdata)
+summary_info_4$Heart_rate_max_value <- sleepdata %>%
+  filter(Heart.rate == max(Heart.rate, na.rm = T)) %>%
+  select(Heart.rate)
+
+#Fifth data summary
+summary_info_5 <- list()
+summary_info_5$num_observations <- nrow(sleepdata_2)
+summary_info_5$Regularity_min_value <- sleepdata_2 %>%
+  filter(Regularity == min(Regularity, na.rm = T)) %>%
+  select(Regularity)
