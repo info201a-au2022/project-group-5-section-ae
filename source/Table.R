@@ -10,4 +10,5 @@ SaYodata<- read.csv(file = "../data/SaYoPillow.csv")
 Table_sl_sr.1 <- SaYodata %>%
   group_by(sl)%>%
   summarise(avg_sr = mean(sr.1))%>%
-  rename("Stress Level" = "sl", "Average Sleepling Hour" = "avg_sr")
+  rename("Stress Level" = "sl", "Average Sleeping Hour" = "avg_sr")
+
