@@ -3,7 +3,7 @@
 library("stringr")
 library("dplyr")
 library("tidyverse")
- # once per machine
+#install.packages("ggplot2") # once per machine
 library("ggplot2") # in each relevant script
 
 #Load the data

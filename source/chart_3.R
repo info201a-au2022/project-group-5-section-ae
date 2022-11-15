@@ -3,8 +3,8 @@
 library("stringr")
 library("dplyr")
 library("tidyverse")
- # once per machine
-library("ggplot2")          # in each relevant script
+#install.packages("ggplot2") # once per machine
+library("ggplot2")  # in each relevant script
 
 #Load the data
 SaYodata<- read.csv(file = "../data/SaYoPillow.csv")
