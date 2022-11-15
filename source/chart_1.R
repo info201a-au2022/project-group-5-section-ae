@@ -15,7 +15,7 @@ top_10 <- sleepdata %>%
   top_n(10, wt = Time.in.bed) 
 
 # Render a horizontal bar chart
-ggplot(data=top_10, aes(x = Time.in.bed, y = Sleep.quality))+
+bar_1 <- ggplot(data=top_10, aes(x = Time.in.bed, y = Sleep.quality))+
   geom_bar(stat="identity",fill="lightblue") + 
   ggtitle("Relationship Between Sleep Quality and Sleep time") + 
   xlab("Amount of Sleep Time (Hour : Minute)") + 
@@ -26,7 +26,7 @@ less_10 <- sleepdata %>%
   top_n(-10, wt = Time.in.bed)
 
 #Render a horizontal bar chart 
-ggplot(data=less_10, aes(x = Time.in.bed, y = Sleep.quality))+
+bar_2 <- ggplot(data=less_10, aes(x = Time.in.bed, y = Sleep.quality))+
   geom_bar(stat="identity",fill="lightblue") + 
   ggtitle("Relationship Between Sleep Quality and Sleep time") + 
   xlab("Amount of Sleep Time (Hour : Minute)") + 
