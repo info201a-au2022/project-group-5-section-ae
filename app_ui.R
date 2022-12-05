@@ -10,7 +10,7 @@ intro_view <- tabPanel(
   "About Our Project",
   sidebarLayout(
     sidebarPanel(
-      h1("Who are we"),
+      h1(strong("Who are we")),
       hr(),
       
       h5("Ji Min Sung"),
@@ -281,7 +281,7 @@ chart_view_3 <- tabPanel(
 # Define UI
 ui <- navbarPage(
   "Sleep Well",
-  theme = shinythemes::shinytheme("cerulean"),
+  theme = shinythemes::shinytheme("darkly"),
   intro_view,
   chart_view_1,
   chart_view_2,
