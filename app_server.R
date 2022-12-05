@@ -60,12 +60,12 @@ server <- function(input, output){
       
       # Render a barplot with ggplotly
       ggplotly(
-        ggplot(data = data_2, aes(x = Sleep.Quality, y = Time.asleep..seconds.)) + 
+        ggplot(data = data_2, aes(x = Sleep.Quality, y = Time.asleep..seconds.)) +
           geom_bar(stat = "identity", fill = "lightblue") + 
           ggtitle(input$Alarm.mode) +
           xlab("Sleep Quality(in Percentage)") + 
-          ylab("Time alseep in seconds")
-        
+          ylab("Time alseep in seconds") + 
+          theme(axis.text.x = element_text(angle=45))
       )
     })
 }
