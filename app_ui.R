@@ -1,10 +1,14 @@
 #app_uilibrary("shiny")
-library("dplyr")
-library("tidyverse")
-library("ggplot2")
-library("plotly")
-library("rsconnect")
-library("shinyWidgets")
+# library("dplyr")
+# library("tidyverse")
+# library("ggplot2")
+# library("plotly")
+# library("rsconnect")
+# library("shinyWidgets")
+
+sleepdata <- read.csv("./data/sleepdata.csv", sep = ";", quote = "")
+sleepdata_2 <- read.csv("./data/sleepdata_2.csv", sep = ";", quote = "")
+sayopillow <- read.csv("./data/SaYoPillow.csv")
 
 intro_view <- tabPanel(
   "About Our Project",

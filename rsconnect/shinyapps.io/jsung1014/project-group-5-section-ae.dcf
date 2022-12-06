@@ -1,0 +1,14 @@
+name: project-group-5-section-ae
+title: project-group-5-section-ae
+username:
+account: jsung1014
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7813337
+bundleId: 6591865
+url: https://jsung1014.shinyapps.io/project-group-5-section-ae/
+when: 1670217571.03618
+lastSyncTime: 1670217571.03619
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|data/example.csv|data/README.md|docs/hello.html|docs/index.html|docs/index.Rmd|docs/p01-proposal.md|docs/README.md|instructions/p01-proposal-requirements.md|instructions/project-design-brief.pdf|instructions/README.md|LICENSE|README.md|source
