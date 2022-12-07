@@ -31,7 +31,8 @@ intro_view <- tabPanel(
       
       h5("Rohan Simha"),
       p("rohans24@uw.edu"),
-      br()
+      br(),
+      helpText("Code Name: REM")
     ),
   mainPanel(
     img("", src = "https://woodedglen.com/wp-content/uploads/2021/06/When-Should-You-Focus-on-Sleep.jpg",
@@ -102,7 +103,7 @@ page2_datas <- fluidPage(
     # Define the sidebar with a box of selections of countries, and the slider for the adjustments of year in bar plot
     sidebarPanel(
       selectInput("Wake.up", "Wake Up:", 
-                  choices = unique(sleepdata$Wake.up)),
+                  choices = unique(new_sleepdata$Wake.up)),
       helpText("Data from 'sleepdata.csv'")
     ),
     
@@ -213,6 +214,9 @@ report_page <- fluidPage(
       hr(),
       
       h2(strong("The Dataset")),
+      img("", src = "https://github.com/info201a-au2022/project-group-5-section-ae/blob/main/source/table.jpeg?raw=true",
+          width = "100%", height = "100%", align = "center"),
+      hr(),
       p("The datasets are related to our problem domain and research questions because we are trying to figure out what
       is causing the lack of sleep and how the different amounts of sleep affects in two ways: stress levels and the 
       feeling of well rested. Each entry (row) in the dataset provides us with the number of hours that person slept, 
@@ -259,6 +263,90 @@ report_page <- fluidPage(
       
       hr(),
       
+      h2(strong("Findings")),
+      h4(strong("What is causing people to have a lack of sleep?")),
+      br(),
+      p("One reason why people get lack of sleep is that they have too much limb movement
+      during sleep. In one of our graphs, titled, “Relationship Between Limb movement and Stress level”, people with little to no limb 
+      movement (limb movement 0-10 on a scale from 0-20) have little to no stress (stress level 0-1 on a scale from 0-4). On the other 
+      hand, people with a lot of limb movement (15-20) have a lot of stress (3-4). As we found from our research, people with more limb 
+      movement have higher stress levels, which causes less sleep. Hence, people with more limb movements have less sleep."),
+      br(),
+      p("Another reason for lack of sleep is using an alarm. One of our interactive charts, titled, “Relationships between Sleep quality 
+      and Time asleep based on the Alarm mode”, shows the relationship between alarm mode, time asleep, and sleep quality. The people 
+      that do not use an alarm and get 100% quality of sleep get over 4e+05 seconds of sleep. The people that use an alarm and get 100% 
+      quality of sleep, get only 3e+05 seconds of sleep. This makes sense because people who usually use an alarm are the ones that 
+      usually need to wake up early for school or work, hence getting less sleep."),
+      br(),
+      h4(strong("What is the average amount of sleep that lets people wake up feeling well-rested?")),
+      br(),
+      p("In our Exploratory Analysis chart, we found a relationship between Sleep Quality and Sleep Time. 
+      We observed that participants with 9 hours and 35 minutes of sleep time had on average a 99 percent sleep quality, which shows 
+      that this is the optimal amount of sleep to achieve the best quality of sleep. Furthermore, when we calculated the effect of 
+      wake-up emotion on the Relationship of Time in Bed and Sleep Quality for the Final Section, we found that for people who woke up 
+      feeling happy the max Sleep Quality the maximum sleep time was at 9 hours and 31 minutes. This is a similar time and also had a 
+      Sleep Quality of 99 percent, which demonstrates how at around 9 hours and 35 minutes people not only have very high sleep quality 
+      but also experience positive emotions when they wake, so they definitely feel well rested."),
+      h4(strong("How does the amount of sleep affect stress levels?")),
+      br(),
+      p("We were unable to find a correlation between sleep and stress levels in this given data, but we did test for how stress levels
+      affect sleep time. One of our interactive charts, titled, “How Stress Level Impacts Your Sleep Time”, shows the relationship between
+      stress levels, sleeping time, and snoring rate. There is a slider that controls the stress level and at the lowest stress level (0),
+      people were able to sleep between 7 to 9 hours. After sliding it to a high stress level (3), people got 2 hours or less of sleep. 
+      This makes sense because someone that is more stressed out will not be able to sleep as well as someone who is stress-free."),
+      
+      hr(),
+      
+      h2(strong("Discussion")),
+      br(),
+      p("From our research, we found that the two main reasons people have a lack of sleep are stress-induced limb movement and the use 
+      of an alarm. Because of the stress that people face in their day-to-day lives, limb movement obviously increases, which thus causes
+      people to have lower sleep times. This can be especially detrimental to one's health, as these lower sleep times can not only 
+      continue to increase stress but also affect sleep quality. Alarms cause people to have less sleep is also a concerning issue,
+      as they are integrated into many people's lives so they can go about their daily lives. Though by using alarms many people may 
+      actually be limiting their sleep, and thus could achieve more if they were not forced to wake up at certain times."),
+      br(),
+      p("From our findings, it is evident that the 9-hour and the 35-minute benchmark is the optimal amount of sleep time one should achieve to feel well-rested. 
+      Because people felt 99 percent Sleep Quality during this time, it shows that not only did the participant sleep for a longer time, 
+      but the sleep they had was quality and beneficial to their overall health. Furthermore, this amount of sleep also yielded a positive
+      wake-up emotion, which shows how achieving this high amount of sleep time can maximize your sleep quality which leaves you feeling 
+      well-rested and positive during the day. Lastly, achieving this high amount of sleep, it may signify how sleeping for longer periods
+      of time causes this higher sleep quality, with lower levels not letting one achieve this high-quality sleep which is necessary to feel
+      well-rested."),
+      br(),
+      p("While we were unable to find a reliable correlation between sleep influencing stress levels, with further research we were
+      able to identify how higher stress levels negatively affected the amount of sleep that participants were able to get. From the lowest
+      levels of stress, the amount of total sleep in hours that people achieved was much higher at 7 to 9 hours, but when it moved to a higher
+      amount of stress declined to a mere 2 hours or less. This demonstrates how influential stress can be on sleep times, and how daily 
+      activities and important events that cause this stress can impact the number of people who are able to sleep. Moreover, when people
+      have such low levels of sleep induced from their stress, this can compound and cause them to have even more stress."),
+      
+      hr(),
+      
+      h2(strong("Conclusion")),
+      p("Sleep is part of everyday life, we all need it. If we miss sleep, there would be various health problems that would be created. 
+      If sleep is so important, how come so many people still have a lack of sleep and have problems sleeping such as insomnia? Sometimes
+      we feel stressed and cannot sleep well and sometimes it’s the other way around, where waking up from bad sleep increases our stress 
+      levels. We all just want to have optimal sleep that leaves us well rested, energized for the coming day, and sleep that will provide
+      us with good health. All these questions and wonderings are what the Sleep Well project aims to answer. This affects everyone since
+      sleep is a significant part of everybody’s life and we can all benefit from better quality sleep."),
+      br(),
+      p("After analyzing sleep data from Kaggle, we concluded that the best number of hours of sleep was 9 hours. 9 hours of sleep everyday was the optimal number of hours 
+      that left us feeling well rested and happy, fueled a productive day, and a good amount of sleep that helps our bodies maintain good
+      health. This conclusion was based on one of our three interactive charts, titled, “Relationships Between Sleep Quality And Time In Bed
+      Based On The Emotion When Wake Up”."),
+      br(),
+      p("We collected data and examined many different factors that go into sleep, such as how the alarm mode affects sleep, how limb movement affects sleep, how the number of steps in a day affects sleep, and how snoring rate affects sleep. 
+      Here are some quick sentences that summarize what we concluded. We get more high quality sleep when there is no alarm. More limb movement
+      correlates with higher stress levels, which means that we get less high quality sleep. The more exercise we get, the better sleep we get,
+      up to a certain limit. A higher snoring rate correlates with higher stress levels, which means we get less sleep."),
+      br(),
+      p("Sometimes we just need to let go of our chaotic and busy lives in order to get better sleep. We need to learn how to balance work and school with our stress levels
+      and exercise. We concluded that 9 hours of sleep is optimal so make sure to try to reach that number on a daily basis. We advise you to 
+      search the internet or ask a doctor about what more you can do to optimize your sleep."),
+      
+      hr(),
+      
       h2(strong("Acknowledgements")),
       p("Thanks to the data provider, and TA"),
       
@@ -284,32 +372,32 @@ report_page <- fluidPage(
 takeaway <- fluidPage(
   titlePanel(strong("Summary Takeaway")),
   mainPanel(
-    p("The first significant takeaway can be found when observing the relationship between snoring level and sleep time at different 
-      variables of stress, which can be found on the first chart. For lower stress levels of zero to three, the relationship between 
-      snoring level and sleep time is positively linear, however, at a stress level of four, the line becomes linear and horizontal. 
-      Furthermore, the maximum sleep time decreases as the stress level increases, but the snoring rate increases with an increase of 
-      stress level. Evidently, not only does a higher stress level cause lower sleep times, but also a higher snoring rate. 
-      This demonstrates how harmful higher stress levels can be, as not only do they lower sleep times which are imperative to your health, 
-      but also increase snoring rates which causes a further disturbance in your sleep quality.  Also, at a stress level of four the sleep time
-      is at zero, showing how such high levels of stress can even cause an inability to sleep. "),
+    p("The first significant takeaway can be found when observing the relationship between snoring level and sleep time at different
+    variables of stress, which can be found on the first chart. For lower stress levels of zero to three, the relationship between 
+    snoring level and sleep time is positively linear, however, at a stress level of four, the line becomes linear and horizontal. 
+    Furthermore, the maximum sleep time decreases as the stress level increases, but the snoring rate increases with an increase in 
+    stress level. Evidently, not only does a higher stress level cause lower sleep times, but also a higher snoring rate. This 
+    demonstrates how harmful higher stress levels can be, as not only do they lower sleep times which are imperative to your health,
+    but also increase snoring rates which causes a further disturbance in your sleep quality.  Also, at a stress level of four the sleep
+    time is at zero, showing how such high levels of stress can even cause an inability to sleep."),
     br(),
     p("Another takeaway can be found in the second chart, which examines the relationship between Time in Bed and Sleep Quality, 
-      and how wake-up emotion affects this relationship. While most participants reported their emotions to be happy, it can be 
-      observed that all of these participants had sleep times around 9 hours, and interestingly those who had slightly more or less 
-      than 9 hours had the highest sleep quality. Also, for both the “happy” and “neutral” emotion, the max ranked Sleep Quality was
-      at a sleep time of 8 hours and 50 minutes. This data shows that not only can Sleeping around 9 hours give optimal Sleep Quality,
-      but it can also increase the positive emotion one feels when achieving adequate sleep. Therefore, it is important for people to 
-      achieve this 9 hour benchmark to improve their general mood and emotions in their daily lives. "),
+      and how wake-up emotion affects this relationship. While most participants reported their emotions to be happy, it can be observed
+      that all of these participants had sleep times around 9 hours, and interestingly those who had slightly more or less than 9 hours 
+      had the highest sleep quality. Also, for both the “happy” and “neutral” emotion, the max ranked Sleep Quality was at a sleep time of
+      8 hours and 50 minutes. This data shows that not only can Sleeping around 9 hours give optimal Sleep Quality, but it can also 
+      increase the positive emotion one feels when achieving adequate sleep. Therefore, it is important for people to achieve this 9 hour
+      benchmark to improve their general mood and emotions in their daily lives."),
     br(),
     p("A final set of takeaways are from chart 3 which observes the effects of alarm versus no alarm and how it affects the relationship
       between sleep quality and sleep time in seconds. With both the presence and lack of an alarm, a 100 percent sleep quality saw a 
-      dramatic increase in sleep time per seconds, with maxes of 4.7e + 05 and 3e + 05 seconds respectively. This shows just how important
-      the optimal sleep quality is for higher sleep times, as achieving this 100 percent sleep quality has a large increase in sleep time
-      regardless of the presence of the alarm. However, interestingly when viewing the other sleep quality percentages, the majority of 
-      sleep times also were higher when there was an alarm compared to no alarm. This conclusion may be due to more participants using an
-      alarm which could skew the data in favor of alarms, but this could raise a point of the relative effectiveness of alarms, and how
-      people who utilize them tend to sleep for longer durations due to the aspect of planning sleep times that comes with setting an 
-      alarm.")
+      dramatic increase in sleep time per second, with maxes of 3e + 05 and 4.7e + 05 seconds respectively. This shows just how important
+      optimal sleep quality is for higher sleep times, as achieving this 100 percent sleep quality has a large increase in sleep time
+      regardless of the presence of the alarm. However, interestingly when viewing the other sleep quality percentages, the majority of
+      sleep times also were higher when there was no alarm compared to an alarm. This conclusion may be due to the fact that alarms “cut
+      off” the participant's sleep times and limit them to a certain amount. As a result, while alarms are necessary for people to go 
+      through day-to-day activities, they can limit the amount of sleep people get, and sometimes make it so they do not achieve optimal 
+      sleep levels, but there does not seem to be a sacrifice in terms of sleep quality")
 ))
 
 takeaway_view <- tabPanel(

@@ -10,6 +10,9 @@
 
 # loading dataset
 sleepdata <- read.csv("./data/sleepdata.csv", sep = ";", quote = "")
+# Since there is only one sad face emotion data and it does not representing significantly, we decided to remove the sad face emotion data from the original dataset
+new_sleepdata <- sleepdata %>%
+  filter(Wake.up ==":)" | Wake.up == ":|")
 sleepdata_2 <- read.csv("./data/sleepdata_2.csv", sep = ";", quote = "")
 sayopillow <- read.csv("./data/SaYoPillow.csv")
 
@@ -52,7 +55,7 @@ server <- function(input, output){
       ggplot(data = data_new, aes(x = Time.in.bed, y = reorder(as.integer(Sleep.quality), Sleep.quality))) +
         geom_point() + 
         ggtitle(input$Wake.up) +
-        xlab("Time in Bed") + 
+        xlab("Time in Bed (Hour:Minute)") + 
         ylab("Sleep Quality(in Percentage)")
     )
   })
@@ -73,8 +76,8 @@ server <- function(input, output){
         ggplot(data = data_2_new, aes(x = reorder(as.integer(Sleep.Quality), Sleep.Quality), y = Time.asleep..seconds.)) +
           geom_bar(stat = "identity", fill = "lightblue") + 
           ggtitle(input$Alarm.mode) +
-          xlab("Sleep Quality(in Percentage)") + 
-          ylab("Time alseep in seconds") + 
+          xlab("Sleep Quality (in Percentage)") + 
+          ylab("Time Alseep in Seconds") + 
           theme(axis.text.x = element_text(angle=45))
       )
     })
